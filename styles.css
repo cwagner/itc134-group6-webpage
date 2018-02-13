@@ -1,0 +1,45 @@
+html{
+    background-color: #ccc; 
+}
+
+div.wrapper {
+    background-color: #fff;
+    width: 80%;
+    margin: auto; 
+    overflow: auto; 
+    font: 100% Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+p {
+    margin-left: 1em;
+}
+
+h1, h2, h3 {
+    margin-left: 0.5em;
+}
+
+/* desktop */
+@media all and (min-width:700px) {
+    
+    /* left column */
+    article {
+        float: left;
+        width: 65%;
+    }
+    
+    /* right column */
+    aside {
+        float: right;
+        width: 34%;
+    }
+}
+
+/* phone */
+@media all and (max-width:699px) {
+    
+    div.wrapper {
+        width: 100%;
+    }
+}
+
