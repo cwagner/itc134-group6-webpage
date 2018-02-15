@@ -21,8 +21,13 @@ p {
 }
 
 h1, h2, h3 {
-    margin-left: 0.5em;
-    color: coral
+    text-align: center;
+    margin: 1em;
+    color: coral;
+    background-image: url("images/irongrip.png");
+    border: 2px solid #333;
+    border-radius: 50px 50px;
+        
 
 }
 h1{
