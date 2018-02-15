@@ -53,9 +53,11 @@ h2{
     }
     
     /* right column */
+    
+    /* works cited below */
     aside {
-        float: right;
-        width: 34%;
+        clear: both;
+        width: 100%;
     }
 }
 
