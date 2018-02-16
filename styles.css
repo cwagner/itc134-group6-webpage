@@ -6,14 +6,11 @@ div.wrapper {
     background-color: #fffa;
     width: 80%;
     margin: auto; 
-    overflow: auto; 
+    overflow: hidden; 
     font: 100% Helvetica, Arial, sans-serif;
     color: #333;
     opacity: 50%
 }
-body{
-    }
-
 
 p {
     margin-left: 2em;
@@ -31,20 +28,45 @@ h1, h2, h3 {
 
 }
 h1{
-    text-align: center;
-    margin: 1em;
     font-size: 3em;
-    background-image: url("images/irongrip.png");
-    border: 2px solid #333;
     border-radius: 50px 20px;
+    padding: .5em;
 }
-h2{
-    color: ;
 
+img {
+    float: right;
+    padding: 1em;
+    width: 45%;
+}
+
+img.floatleft {
+    float: left;
+}
+
+aside {
+    font-size: 1.4em;
+    font-style: italic;
+    color: #666;
+}
+
+p.pull_quote {
+    padding: 8em 1em;
+    padding-right: 2em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+footer p {
+    text-indent: -1em;
+    padding-left: 1em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #215ab7;
 }
 
 /* desktop */
-@media all and (min-width:700px) {
+@media all and (min-width:800px) {
     
     /* left column */
     article {
@@ -53,19 +75,35 @@ h2{
     }
     
     /* right column */
-    
-    /* works cited below */
     aside {
+        float: right;
+        width: 34%;
+    }
+
+    /* works cited footer */
+    footer {
         clear: both;
         width: 100%;
     }
 }
 
 /* phone */
-@media all and (max-width:699px) {
+@media all and (max-width:799px) {
     
     div.wrapper {
         width: 100%;
+    }
+    aside {
+        display: none;
+    }
+    img {
+        display: block;
+        width: 90%;
+        float: none;
+        margin: auto;
+    }
+    p {
+        margin: 0em 0.5em;
     }
 }
 
